@@ -11,13 +11,12 @@ import ImageTwo from "../assets/img/cubasunset.jpg"
 import ImageOne from "../assets/img/cubaandme.jpg"
 export default function About() {
   return (
-    <div style={{ margin: `0 auto`, maxWidth: 1250, padding: `0 1rem` }}>
+    <div style={{ margin: `0 auto`, maxWidth: 1250, padding: `0 1rem`, textAlign: `justify` }}>
       <br/>
       <br/>
-      <br/>
-      <br/>
+    
 
-      <h1 className="display-3" id="aboutMe">
+      <h1 className="display-4" id="aboutMe">
         About Me
       </h1>
 
@@ -25,11 +24,11 @@ export default function About() {
         <Col>
           <h4>Journey to coding</h4>{" "}
           <p>
-            Originally a Modern Languages grad, I'm swapping la belle langue for
+            Originally a Modern Languages grad, I'm swapping <i>la belle langue</i> for
             Javascript and more! The idea of making the switch first sparked in
             my final year of university when through a summer course for
             Humanities students about Data Analytics. I was lucky enough to get
-            a mini-internship with Epraise where I was introduced to SQL, and I
+            a mini-internship with <a href="https://www.epraise.co.uk/" target="_blank">Epraise</a> where I was introduced to SQL, and I
             was hooked!
           </p>{" "}
           <br />
@@ -37,8 +36,8 @@ export default function About() {
           <p>
             When I was furloughed in April 2020, I spent some time self-teaching
             the basics of HTML / CSS / JavaScript, before taking the plunge and
-            signing up to the Northcoders 14 week bootcamp for Full Stack
-            Development (Oct 2020- Jan 2021). There are 4 cycles to the course: Fundementals,
+            signing up to the <a href="https://northcoders.com"  target="_blank">Northcoders 14 week bootcamp for Full Stack
+            Development</a> (Oct 2020- Jan 2021). There are 4 blocks to the course: Fundementals,
             Back-End, Front-End and Team Project. Check out
             the list tabs to see more detail of the topics covered.
           </p>{" "}
@@ -52,7 +51,7 @@ export default function About() {
               id="list-group-tabs-example"
               defaultActiveKey="#fundementals"
             >
-              <h4>Northcoders Teck Stack:</h4>
+              <h4>Northcoders Tech Stack</h4>
               <Row>
                 <Col sm={4}>
                   <ListGroup>
@@ -90,7 +89,7 @@ export default function About() {
                         <li>Express</li>
                         <li>Axios / Fetch</li>
                         <li>MVC model</li>
-                        <li>Postgres databases and SQL</li>
+                        <li>PostgreSQL database</li>
                         <li>Node Postgres</li>
                         <li>Knex</li>
                         <li>Heroku Hosting</li>
@@ -143,8 +142,8 @@ export default function About() {
             I am
             completely geographically flexible across the UK and will be
             relocating for my first Junior developer role.
-
-            I'm open to Full-Stack and Front-End roles, and would be particularly interested in roles where I could develop Front-End testing skills!
+<br/>
+            I'm keen to find a role where I can continue to build my knowledge and skills of testing, whether that be as a Junior Tester or through TDD in Front-End/Full Stack Development
           </p>
         </Col>
         <Col>

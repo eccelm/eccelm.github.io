@@ -35,14 +35,14 @@ export default function Home() {
         <br />
         <br />
       </div>
-      <div className="text-center text-dark shadow-lg p-3 mb-5 bg-light rounded">
+      <div className="d-flex justify-content-center text-center text-dark shadow-lg p-3 mb-5 bg-light rounded">
       <Row xs={1} md={2}>
           <Col>
           <Container fluid>
             <Image src={ProfileImage} thumbnail fluid/>
             </Container>
           </Col>
-          <Col>
+          <Col className="">
             {" "}
             <p className="text-center">Thanks for visiting my Portfolio !</p>
             <p>
