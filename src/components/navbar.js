@@ -1,12 +1,11 @@
 import React from "react"
 import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
-import NavDropdown from "react-bootstrap/NavDropdown"
 
 function Navigation() {
   return (
     <div>
-      <Navbar bg="danger" variant="dark" expand="sm" fixed="top">
+      <Navbar bg="danger" variant="dark" expand="sm" sticky="top">
         <Navbar.Brand>Portfolio</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-nav" />
         <Navbar.Collapse id="responsive-nav" className="justify-content-end">
