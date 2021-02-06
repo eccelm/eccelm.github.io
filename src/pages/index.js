@@ -1,12 +1,13 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
+import "./index.css"
 // react-bootstrap required components
 import Button from "react-bootstrap/Button"
 import Container from "react-bootstrap/Container"
 import Col from "react-bootstrap/Col"
 import Row from "react-bootstrap/Row"
 import Image from "react-bootstrap/Image"
-import ImageOne from "../assets/img/cubaandme.jpg"
+//import ImageOne from "../assets/img/cubaandme.jpg"
 import ProfileImage from "../assets/img/marthaprofile.jpg"
 //Components
 import Layout from "../components/layout"
@@ -15,10 +16,10 @@ export default function Home() {
   return (
     <Layout>
       <br />
-      <div className="text-center text-dark shadow-lg p-3 mb-5 bg-light rounded" id="home">
+      <div className="text-center text-dark shadow-lg p-3 mb-5 bg-light rounded" style={{minHeight: `40vh`}}id="home">
+      <br />
         <br />
-        <br />
-        <br />
+        <br /> 
         <h1 className="display-3">Martha Eccles</h1>
         <h2 className="display-4">Junior Developer</h2>
         <hr />
@@ -31,9 +32,7 @@ export default function Home() {
         >
           LinkedIn
         </Button>
-        <br />
-        <br />
-        <br />
+    
       </div>
       <div className="d-flex justify-content-center text-center text-dark shadow-lg p-3 mb-5 bg-light rounded">
       <Row xs={1} md={2}>

@@ -12,7 +12,6 @@ function Navigation() {
         <Navbar.Collapse id="responsive-nav" className="justify-content-end">
           <Nav  >
             <Nav.Link href="/#home" active={true}>Home</Nav.Link>
-            <Nav.Link href="#aboutMe"  active={true}>About Me</Nav.Link>
             <Nav.Link href="/projects"  active={true}>Projects</Nav.Link>
             <Nav.Link href="/blog"  active={true}>Blog</Nav.Link>
           </Nav>

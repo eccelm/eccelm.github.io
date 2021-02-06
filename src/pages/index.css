@@ -1,0 +1,12 @@
+body {
+   padding-top: 70px;
+}
+
+#home {
+justify-content: center;
+align-items: center;
+}
+
+p {
+   font-size: 20px;
+}

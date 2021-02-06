@@ -28,7 +28,7 @@ export default function About() {
             Javascript and more! The idea of making the switch first sparked in
             my final year of university when through a summer course for
             Humanities students about Data Analytics. I was lucky enough to get
-            a mini-internship with <a href="https://www.epraise.co.uk/" target="_blank">Epraise</a> where I was introduced to SQL, and I
+            a mini-internship with <a href="https://www.epraise.co.uk/" target="_blank" rel="noreferrer">Epraise</a> where I was introduced to SQL, and I
             was hooked!
           </p>{" "}
           <br />
@@ -36,7 +36,7 @@ export default function About() {
           <p>
             When I was furloughed in April 2020, I spent some time self-teaching
             the basics of HTML / CSS / JavaScript, before taking the plunge and
-            signing up to the <a href="https://northcoders.com"  target="_blank">Northcoders 14 week bootcamp for Full Stack
+            signing up to the <a href="https://northcoders.com"  target="_blank" rel="noreferrer">Northcoders 14 week bootcamp for Full Stack
             Development</a> (Oct 2020- Jan 2021). There are 4 blocks to the course: Fundementals,
             Back-End, Front-End and Team Project. Check out
             the list tabs to see more detail of the topics covered.
