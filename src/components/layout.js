@@ -7,7 +7,7 @@ export default function Layout(props) {
     <div style={{ margin: `0 auto`, maxWidth: 1250, padding: `0 1rem` }}>
       <Navigation />
       {props.children}
-      <Footer/>
+
     </div>
   )
 }
