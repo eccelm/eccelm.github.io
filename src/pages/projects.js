@@ -89,12 +89,41 @@ export default function Projects() {
                   <Col>
                     <h3>TeamMates:</h3>
                     <ul id="team-list">
-                      <li> Benjamin Karst - <a href="https://www.linkedin.com/in/benjamin-karst/" target="_blank" rel="noopener noreferrer">LinkedIn</a> </li>
-                      <li> Michael Squires - <a href="https://www.linkedin.com/in/michael-squires-3b797a104/" target="_blank" rel="noopener noreferrer">LinkedIn</a> </li>
-                      <li> Alice Horsey - <a  href="https://www.linkedin.com/in/alice-horsey-23aa661bb/" target="_blank" rel="noopener noreferrer">LinkedIn</a> </li>
-                  
+                      <li>
+                        {" "}
+                        Benjamin Karst -{" "}
+                        <a
+                          href="https://www.linkedin.com/in/benjamin-karst/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          LinkedIn
+                        </a>{" "}
+                      </li>
+                      <li>
+                        {" "}
+                        Michael Squires -{" "}
+                        <a
+                          href="https://www.linkedin.com/in/michael-squires-3b797a104/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          LinkedIn
+                        </a>{" "}
+                      </li>
+                      <li>
+                        {" "}
+                        Alice Horsey -{" "}
+                        <a
+                          href="https://www.linkedin.com/in/alice-horsey-23aa661bb/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          LinkedIn
+                        </a>{" "}
+                      </li>
                     </ul>
-              
+
                     <p>
                       The idea for Tennis Match came from my team mate Ben, who
                       wanted to design an app that would allow him to find
@@ -111,43 +140,52 @@ export default function Projects() {
                       <li>Messaging functionality</li>
                       <li>Reset / Modify preferences</li>
                     </ul>
-<h3>Future Changes</h3>
-              <ul>
-                <li>Move all database storage to Firebase</li>
-                <li>Complete the real-time messaging functionality</li>
-                <li>Expand map functionality</li>
-              </ul>
-              <h3>Watch the Demo</h3>
-                    <p>Find the demo video by clicking on the link <a href="https://www.youtube.com/watch?v=U1hoOsNirNM" target="_blank" rel="noopener noreferrer">here</a>, or copy paste the address into your browser: https://www.youtube.com/watch?v=U1hoOsNirNM</p>
+                    <h3>Future Changes</h3>
+                    <ul>
+                      <li>Move all database storage to Firebase</li>
+                      <li>Complete the real-time messaging functionality</li>
+                      <li>Expand map functionality</li>
+                    </ul>
+                    <h3>Watch the Demo</h3>
+                    <p>
+                      Find the demo video by clicking on the link{" "}
+                      <a
+                        href="https://www.youtube.com/watch?v=U1hoOsNirNM"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        here
+                      </a>
+                      , or copy paste the address into your browser:
+                      https://www.youtube.com/watch?v=U1hoOsNirNM
+                    </p>
                   </Col>
                   <Col className="my-auto">
-         
-                      <div style={{ maxWidth: "300px", margin: `auto` }}>
-                        <Carousel>
-                          <Carousel.Item>
-                            <img
-                              className="d-block w-100"
-                              src={MatchesPicture}
-                              alt="First slide"
-                            />
-                          </Carousel.Item>
-                          <Carousel.Item>
-                            <img
-                              className="d-block w-100"
-                              src={CreateProfilePicture}
-                              alt="Screenshot of the profile creation screen of the Tennis Match app"
-                            />
-                          </Carousel.Item>
-                          <Carousel.Item>
-                            <img
-                              className="d-block w-100"
-                              src={MessagingPicture}
-                              alt="Messages screen of Tennis Match app"
-                            />
-                          </Carousel.Item>
-                        </Carousel>
-                      </div>{" "}
-                 
+                    <div style={{ maxWidth: "300px", margin: `auto` }}>
+                      <Carousel>
+                        <Carousel.Item>
+                          <img
+                            className="d-block w-100"
+                            src={MatchesPicture}
+                            alt="First slide"
+                          />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                          <img
+                            className="d-block w-100"
+                            src={CreateProfilePicture}
+                            alt="Screenshot of the profile creation screen of the Tennis Match app"
+                          />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                          <img
+                            className="d-block w-100"
+                            src={MessagingPicture}
+                            alt="Messages screen of Tennis Match app"
+                          />
+                        </Carousel.Item>
+                      </Carousel>
+                    </div>{" "}
                   </Col>
                 </Row>
               </Container>
@@ -207,6 +245,7 @@ export default function Projects() {
           </Accordion.Toggle>
           <Accordion.Collapse eventKey="1">
             <Card.Body>
+              <Container>
               <Row xs={1} md={2}>
                 <Col>
                   Hello from the first column. My purpose is to explain the
@@ -219,6 +258,7 @@ export default function Projects() {
                   Carousel of images from the project
                 </Col>
               </Row>
+              </Container>
             </Card.Body>
           </Accordion.Collapse>
         </Card>
@@ -259,18 +299,23 @@ export default function Projects() {
           </Accordion.Toggle>
           <Accordion.Collapse eventKey="2">
             <Card.Body>
+            <Container>
               <Row xs={1} md={2}>
                 <Col>
-                  Hello from the first column. My purpose is to explain the
-                  project and it's challenges and what what their is still to
-                  do! I also need to provide a link to the github code and, if
-                  the project is hosted, a link to the page it is hosted on
+                <h3>Planned Improvements</h3>
+               <p>Originally a shorter sprint from the Northcoders bootcamp, I am planning to build further on the app to gain skills in the following</p>
+               <ul>
+                 <li>Figma prototype mocking</li>
+                 <li>Writing tests for React</li>
+                 <li>Using Async / Await with Axios</li>
+               </ul>
                 </Col>
                 <Col>
                   Hello from the second column. My purpose is to house a litle
                   Carousel of images from the project
                 </Col>
               </Row>
+              </Container>
             </Card.Body>
           </Accordion.Collapse>
         </Card>
@@ -303,17 +348,19 @@ export default function Projects() {
           </Accordion.Toggle>
           <Accordion.Collapse eventKey="3">
             <Card.Body>
-              {" "}
-              <span>
-                For CSS mini projects, check out my Codepen:{" "}
-                <OverlayTrigger
-                  placement="right"
-                  delay={{ show: 250, hide: 400 }}
-                  overlay={renderTooltip}
-                >
-                  <Button variant="danger">Go to Codepen</Button>
-                </OverlayTrigger>
-              </span>
+              <Container>
+                {" "}
+                <span>
+                  For CSS mini projects, check out my Codepen:{" "}
+                  <OverlayTrigger
+                    placement="right"
+                    delay={{ show: 250, hide: 400 }}
+                    overlay={renderTooltip}
+                  >
+                    <Button variant="danger">Go to Codepen</Button>
+                  </OverlayTrigger>
+                </span>
+              </Container>
             </Card.Body>
           </Accordion.Collapse>
         </Card>
