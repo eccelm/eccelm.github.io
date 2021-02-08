@@ -40,9 +40,9 @@ export default function About() {
           <br />
          
         </Col>
-        <Col className="my-auto justify-content-center">
-        {" "}
-          <Container>
+        <Col className=" justify-content-center my-auto">
+        <Container>
+        <div style={{paddingLeft: `45px`}}>
             <Tab.Container
               id="list-group-tabs-example"
               defaultActiveKey="#fundementals"
@@ -50,6 +50,7 @@ export default function About() {
               <h4>Northcoders Tech Stack</h4>
               <Row>
                 <Col sm={4}>
+                
                   <ListGroup>
                     <ListGroup.Item action href="#fundementals">
                       Fundementals
@@ -120,8 +121,9 @@ export default function About() {
                 </Col>
               </Row>
             </Tab.Container>
-            <br />
-          </Container>
+         
+            </div>
+            </Container>
         </Col>
       </Row>
       <Row xs={1} lg={2}>
@@ -136,7 +138,7 @@ export default function About() {
           <br />
           <h4>Role I'm searching for:</h4>{" "}
           <p>
-          I'm keen to find a role where I can continue to build my knowledge and skills of testing, whether that be as a Junior Tester or through TDD in Front-End/Full Stack Development
+          I'm keen to find a role where I can continue to build my knowledge and skills of testing, whether that be as a Junior Tester or through TDD in Front-End/Full Stack Development. 
             I am
             completely geographically flexible across the UK and will be
             relocating for the job!
@@ -147,7 +149,7 @@ export default function About() {
              
         <Col className="my-auto d-flex justify-content-center">
           <Container>
-            <div style={{ maxHeight: "400px", maxWidth: "450px" }}>
+            <div style={{ maxHeight: "400px", maxWidth: "450px", margin: `auto` }}>
               <Carousel indicators={false}>
                 <Carousel.Item>
                   <img

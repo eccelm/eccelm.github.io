@@ -1,8 +1,9 @@
 import React from "react"
+import "./projects.css"
+// React-bootstrap
 import Container from "react-bootstrap/Container"
 import Card from "react-bootstrap/Card"
 import Carousel from "react-bootstrap/Carousel"
-import MatchesPicture from "../assets/img/Matches-Screen.jpg"
 import Accordion from "react-bootstrap/Accordion"
 import Button from "react-bootstrap/Button"
 import Badge from "react-bootstrap/Badge"
@@ -11,7 +12,10 @@ import Row from "react-bootstrap/Row"
 import OverlayTrigger from "react-bootstrap/OverlayTrigger"
 import Tooltip from "react-bootstrap/Tooltip"
 import Layout from "../components/layout"
-
+//
+import MatchesPicture from "../assets/img/Matches-Screen.jpg"
+import MessagingPicture from "../assets/img/Messaging.jpg"
+import CreateProfilePicture from "../assets/img/tm-create-profile.png"
 export default function Projects() {
   const renderTooltip = props => (
     <Tooltip id="button-tooltip" {...props}>
@@ -22,7 +26,7 @@ export default function Projects() {
   return (
     <Layout>
       <h1>Projects</h1>
-      <h2>Click anywhere on a project summary to see the full details</h2>
+      <p>Click anywhere on a project summary to see the full details</p>
       <br />
 
       <Accordion defaultActiveKey="0">
@@ -31,7 +35,6 @@ export default function Projects() {
             <Container>
               <Row xs={1} sm={2}>
                 <Col>
-                  {" "}
                   <h2>
                     Tennis Match
                     <span role="img" aria-label="tennis raquet emoji">
@@ -84,32 +87,42 @@ export default function Projects() {
               <Container>
                 <Row xs={1} lg={2}>
                   <Col>
-                    <p>
-                      TeamMates: Benjamin Karst, Michael Squires, Alice Horsey
-                    </p>
+                    <h3>TeamMates:</h3>
+                    <ul id="team-list">
+                      <li> Benjamin Karst - <a href="https://www.linkedin.com/in/benjamin-karst/" target="_blank" rel="noopener noreferrer">LinkedIn</a> </li>
+                      <li> Michael Squires - <a href="https://www.linkedin.com/in/michael-squires-3b797a104/" target="_blank" rel="noopener noreferrer">LinkedIn</a> </li>
+                      <li> Alice Horsey - <a  href="https://www.linkedin.com/in/alice-horsey-23aa661bb/" target="_blank" rel="noopener noreferrer">LinkedIn</a> </li>
+                  
+                    </ul>
+              
                     <p>
                       The idea for Tennis Match came from my team mate Ben, who
                       wanted to design an app that would allow him to find
                       others to play against without needing to join up to a
                       local club.
                     </p>
-                    <p>
-                      In the MVP of the app we decided the core features would
-                      be profile and authentication creation, the ability to set
-                      preferences to find the best suited matches, and a
-                      messaging functionality so users can chat to arrange a
-                      game!
-                    </p>
-                    <p>
-                      We had 2 and half weeks to complete this MVP. The first
-                      week was just before the Christmas break and we spent this
-                      spiking out React-Native and potential libraries we might
-                      use
-                    </p>
+                    <h3>MVP Version</h3>
+                    <ul>
+                      <li>
+                        Profile authentication and registration (Firebase)
+                      </li>
+                      <li>Set partner preferences</li>
+                      <li>Swiping element for matching</li>
+                      <li>Messaging functionality</li>
+                      <li>Reset / Modify preferences</li>
+                    </ul>
+<h3>Future Changes</h3>
+              <ul>
+                <li>Move all database storage to Firebase</li>
+                <li>Complete the real-time messaging functionality</li>
+                <li>Expand map functionality</li>
+              </ul>
+              <h3>Watch the Demo</h3>
+                    <p>Find the demo video by clicking on the link <a href="https://www.youtube.com/watch?v=U1hoOsNirNM" target="_blank" rel="noopener noreferrer">here</a>, or copy paste the address into your browser: https://www.youtube.com/watch?v=U1hoOsNirNM</p>
                   </Col>
-                  <Col>
-                    <Container>
-                      <div style={{ maxWidth: "300px" }}>
+                  <Col className="my-auto">
+         
+                      <div style={{ maxWidth: "300px", margin: `auto` }}>
                         <Carousel>
                           <Carousel.Item>
                             <img
@@ -117,47 +130,24 @@ export default function Projects() {
                               src={MatchesPicture}
                               alt="First slide"
                             />
-                            <Carousel.Caption>
-                              <h3>First slide label</h3>
-                              <p>
-                                Nulla vitae elit libero, a pharetra augue mollis
-                                interdum.
-                              </p>
-                            </Carousel.Caption>
                           </Carousel.Item>
                           <Carousel.Item>
                             <img
                               className="d-block w-100"
-                              src={MatchesPicture}
-                              alt="Third slide"
+                              src={CreateProfilePicture}
+                              alt="Screenshot of the profile creation screen of the Tennis Match app"
                             />
-
-                            <Carousel.Caption>
-                              <h3>Second slide label</h3>
-                              <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit.
-                              </p>
-                            </Carousel.Caption>
                           </Carousel.Item>
                           <Carousel.Item>
                             <img
                               className="d-block w-100"
-                              src={MatchesPicture}
-                              alt="Third slide"
+                              src={MessagingPicture}
+                              alt="Messages screen of Tennis Match app"
                             />
-
-                            <Carousel.Caption>
-                              <h3>Third slide label</h3>
-                              <p>
-                                Praesent commodo cursus magna, vel scelerisque
-                                nisl consectetur.
-                              </p>
-                            </Carousel.Caption>
                           </Carousel.Item>
                         </Carousel>
                       </div>{" "}
-                    </Container>
+                 
                   </Col>
                 </Row>
               </Container>
