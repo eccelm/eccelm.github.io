@@ -13,9 +13,14 @@ import OverlayTrigger from "react-bootstrap/OverlayTrigger"
 import Tooltip from "react-bootstrap/Tooltip"
 import Layout from "../components/layout"
 //
+import Footer from "../components/footer"
 import MatchesPicture from "../assets/img/Matches-Screen.jpg"
 import MessagingPicture from "../assets/img/Messaging.jpg"
 import CreateProfilePicture from "../assets/img/tm-create-profile.png"
+//
+import LoginScreen from "../assets/img/tracker-login.png"
+import DashboardScreen from "../assets/img/tracker-dashboard.png"
+
 export default function Projects() {
   const renderTooltip = props => (
     <Tooltip id="button-tooltip" {...props}>
@@ -26,10 +31,10 @@ export default function Projects() {
   return (
     <Layout>
       <h1>Projects</h1>
-      <p>Click anywhere on a project summary to see the full details</p>
+      <h2>Click anywhere on a project summary to see the full details</h2>
       <br />
 
-      <Accordion defaultActiveKey="0">
+      <Accordion defaultActiveKey="0" style={{paddingBottom: `50px`}}>
         <Card>
           <Accordion.Toggle as={Card.Header} eventKey="0">
             <Container>
@@ -41,15 +46,16 @@ export default function Projects() {
                       🎾
                     </span>
                   </h2>
-                  <p>
+                  <p className="pr-description">
                     The final project of the Northcoders bootcamp! Putting a
                     sporty spin on swiping right to let users find other players
                     in their local area. Will you find your tennis match?
                   </p>
                 </Col>
                 <Col>
-                  <div>
+                  <div className="tech-stack">
                     <p>Tech Stack:</p>
+                    <p>
                     <Badge pill variant="primary">
                       React Native
                     </Badge>{" "}
@@ -76,7 +82,7 @@ export default function Projects() {
                     </Badge>{" "}
                     <Badge pill variant="light">
                       Jest Testing
-                    </Badge>
+                    </Badge></p>
                   </div>
                 </Col>
               </Row>
@@ -146,9 +152,17 @@ export default function Projects() {
                       <li>Complete the real-time messaging functionality</li>
                       <li>Expand map functionality</li>
                     </ul>
+                    <h3>Source Code</h3>
+               <ul>
+                 <li>Back-End Repo <a href="https://github.com/michael-squires/be-tennis-matcher" target="_blank" rel="noopener noreferrer">here</a></li>
+                 <li>Front-End Repo <a href="https://github.com/eccelm/fe-tennis-matcher" target="_blank" rel="noopener noreferrer">here</a></li>
+                 <li>Or copy/paste: 
+                   <ul> <li>  https://github.com/michael-squires/be-tennis-matcher</li> <li>https://github.com/eccelm/fe-tennis-matcher</li></ul>
+                 </li>
+               </ul>
                     <h3>Watch the Demo</h3>
                     <p>
-                      Find the demo video by clicking on the link{" "}
+                      Find the YouTube demo video by clicking on the link{" "}
                       <a
                         href="https://www.youtube.com/watch?v=U1hoOsNirNM"
                         target="_blank"
@@ -156,8 +170,9 @@ export default function Projects() {
                       >
                         here
                       </a>
-                      , or copy paste the address into your browser:
-                      https://www.youtube.com/watch?v=U1hoOsNirNM
+                      , or copy/paste the address into your browser:
+                      <ul><li>  https://www.youtube.com/watch?v=U1hoOsNirNM</li></ul>
+                    
                     </p>
                   </Col>
                   <Col className="my-auto">
@@ -206,14 +221,16 @@ export default function Projects() {
                       </span>
                     </h2>
                   </span>
-                  <p>
+                  <p className="pr-description">
                     A reddit-style website with both front and back-end built
                     from scratch. Come catch up on the latest Northcoders news!
                   </p>
                 </Col>
                 <Col>
+                
+                  <div className="tech-stack">
                   <p>Tech Stack:</p>
-                  <div>
+                  <p>
                     <Badge pill variant="primary">
                       React
                     </Badge>{" "}
@@ -237,7 +254,7 @@ export default function Projects() {
                     </Badge>{" "}
                     <Badge pill variant="light">
                       Jest Testing
-                    </Badge>
+                    </Badge></p>
                   </div>
                 </Col>
               </Row>
@@ -248,14 +265,20 @@ export default function Projects() {
               <Container>
               <Row xs={1} md={2}>
                 <Col>
-                  Hello from the first column. My purpose is to explain the
-                  project and it's challenges and what what their is still to
-                  do! I also need to provide a link to the github code and, if
-                  the project is hosted, a link to the page it is hosted on
+             <h3>About</h3>
+          <p>This full-stack project combines the RESTful API built in the final sprint for the back-end block of the Northcoders bootcamp with a React Front-End. </p>
+          <p>Hosted version coming soon!</p>
+           
                 </Col>
                 <Col>
-                  Hello from the second column. My purpose is to house a little
-                  Carousel of images from the project
+                <h3>Source Code</h3>
+               <ul>
+                 <li>Back-End Repo <a href="https://github.com/eccelm/nc-news-backend" target="_blank" rel="noopener noreferrer">here</a></li>
+                 <li>Front-End Repo <a href="https://github.com/eccelm/NC-News-React-FrontEnd" target="_blank" rel="noopener noreferrer">here</a></li>
+                 <li>Or copy/paste: 
+                   <ul> <li>  https://github.com/eccelm/nc-news-backend</li> <li>https://github.com/eccelm/NC-News-React-FrontEnd</li></ul>
+                 </li>
+               </ul>
                 </Col>
               </Row>
               </Container>
@@ -277,21 +300,22 @@ export default function Projects() {
                       </span>
                     </h2>
                   </span>
-                  <p>
+                  <p className="pr-description">
                     A smaller sprint from the front-end block currently
                     undergoing a makeover to trial CSS styling in React and
                     getting to grips with testing React!
                   </p>
                 </Col>
                 <Col>
-                  <div>
+                <div className="tech-stack">
                     <p>Tech Stack: </p>
+                    <p>
                     <Badge pill variant="primary">
                       React
                     </Badge>{" "}
                     <Badge pill variant="primary">
                       Axios
-                    </Badge>{" "}
+                    </Badge>{" "} </p>
                   </div>{" "}
                 </Col>
               </Row>
@@ -303,16 +327,41 @@ export default function Projects() {
               <Row xs={1} md={2}>
                 <Col>
                 <h3>Planned Improvements</h3>
-               <p>Originally a shorter sprint from the Northcoders bootcamp, I am planning to build further on the app to gain skills in the following</p>
+               <p>Originally a shorter sprint from the Northcoders bootcamp, I am planning to continue to add to it to develop new skills and practise the following:</p>
                <ul>
                  <li>Figma prototype mocking</li>
+                 <li>Styled Components (CSS)</li>
                  <li>Writing tests for React</li>
                  <li>Using Async / Await with Axios</li>
                </ul>
+
+               <h3>Source Code</h3>
+               <ul>
+                 <li>Github Repo <a href="https://github.com/eccelm/NC-React-Tracker-Project" target="_blank" rel="noopener noreferrer">here</a></li>
+                 <li>Or copy/paste: <ul><li>https://github.com/eccelm/NC-React-Tracker-Project</li></ul></li>
+               </ul>
                 </Col>
                 <Col>
-                  Hello from the second column. My purpose is to house a litle
-                  Carousel of images from the project
+                 
+                  <div style={{ maxHeight: "350px", margin: `auto` }}> 
+                  <Carousel>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={LoginScreen}
+      alt="First slide"
+    />
+  </Carousel.Item>
+
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={DashboardScreen}
+      alt="Third slide"
+    />
+  </Carousel.Item>
+</Carousel>
+                  </div>
                 </Col>
               </Row>
               </Container>
@@ -326,7 +375,7 @@ export default function Projects() {
                 <Col>
                   {" "}
                   <h2>Mini Projects</h2>
-                  <p>
+                  <p className="pr-description">
                     A pick'n'mix of small projects for getting to grips with
                     each bit of technology and spiking out of
                     libraries/frameworks for larger projects!
@@ -334,23 +383,25 @@ export default function Projects() {
                 </Col>
                 <Col>
                   {" "}
-                  <p>
-                    Tech Stack:
-                    <div>
+             
+                    <div className="tech-stack">
+                    <p>
+                    Tech Stack: </p>
+                    <p>
                       <Badge pill variant="dark">
                         A little bit of everything!
-                      </Badge>
+                      </Badge></p>
                     </div>
-                  </p>
+                 
                 </Col>
               </Row>
             </Container>
           </Accordion.Toggle>
           <Accordion.Collapse eventKey="3">
             <Card.Body>
-              <Container>
+              <Container >
                 {" "}
-                <span>
+                <span >
                   For CSS mini projects, check out my Codepen:{" "}
                   <OverlayTrigger
                     placement="right"
@@ -364,7 +415,8 @@ export default function Projects() {
             </Card.Body>
           </Accordion.Collapse>
         </Card>
-      </Accordion>
+      </Accordion >
+   
     </Layout>
   )
 }
