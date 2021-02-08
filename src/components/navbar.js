@@ -5,7 +5,7 @@ import Nav from "react-bootstrap/Nav"
 function Navigation() {
   return (
     <div>
-      <Navbar bg="danger" variant="dark" expand="sm" sticky="top">
+      <Navbar bg="danger" variant="dark" expand="sm" fixed="top">
         <Navbar.Brand>Portfolio</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-nav" />
         <Navbar.Collapse id="responsive-nav" className="justify-content-end">
