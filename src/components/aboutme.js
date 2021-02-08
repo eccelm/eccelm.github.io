@@ -12,15 +12,11 @@ import ImageOne from "../assets/img/cubaandme.jpg"
 export default function About() {
   return (
     <div style={{ margin: `0 auto`, maxWidth: 1250, padding: `0 1rem`, textAlign: `justify` }}>
-      <br/>
-      <br/>
-    
-
-      <h1 className="display-4" id="aboutMe">
+      <h1 className="display-4" id="aboutMe" style={{paddingTop: `50px`, paddingBottom: `30px`}}>
         About Me
       </h1>
 
-      <Row xs={1} lg={2}>
+      <Row xs={1} lg={2} style={{paddingBottom: `50px`}}>
         <Col>
           <h4>Journey to coding</h4>{" "}
           <p>
@@ -44,7 +40,7 @@ export default function About() {
           <br />
          
         </Col>
-        <Col>
+        <Col className="my-auto justify-content-center">
         {" "}
           <Container>
             <Tab.Container
@@ -129,6 +125,7 @@ export default function About() {
         </Col>
       </Row>
       <Row xs={1} lg={2}>
+   
         <Col>
         <h4>Outside of coding</h4>{" "}
           <p>
@@ -139,16 +136,18 @@ export default function About() {
           <br />
           <h4>Role I'm searching for:</h4>{" "}
           <p>
+          I'm keen to find a role where I can continue to build my knowledge and skills of testing, whether that be as a Junior Tester or through TDD in Front-End/Full Stack Development
             I am
             completely geographically flexible across the UK and will be
-            relocating for my first Junior developer role.
-<br/>
-            I'm keen to find a role where I can continue to build my knowledge and skills of testing, whether that be as a Junior Tester or through TDD in Front-End/Full Stack Development
+            relocating for the job!
+
+         
           </p>
         </Col>
-        <Col>
+             
+        <Col className="my-auto d-flex justify-content-center">
           <Container>
-            <div style={{ maxHeight: "300px", maxWidth: "400px" }}>
+            <div style={{ maxHeight: "400px", maxWidth: "450px" }}>
               <Carousel indicators={false}>
                 <Carousel.Item>
                   <img
@@ -176,6 +175,7 @@ export default function About() {
           </Container>
         </Col>
       </Row>
+
       <br />
       <br />
     </div>

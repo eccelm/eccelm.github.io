@@ -7,8 +7,7 @@ import Container from "react-bootstrap/Container"
 import Col from "react-bootstrap/Col"
 import Row from "react-bootstrap/Row"
 import Image from "react-bootstrap/Image"
-//import ImageOne from "../assets/img/cubaandme.jpg"
-import ProfileImage from "../assets/img/marthaprofile.jpg"
+import ProfileImage from "../assets/img/testprofile.png"
 //Components
 import Layout from "../components/layout"
 import About from "../components/aboutme"
@@ -34,16 +33,15 @@ export default function Home() {
         </Button>
     
       </div>
-      <div className="d-flex justify-content-center text-center text-dark shadow-lg p-3 mb-5 bg-light rounded">
+      <div className="d-flex text-center text-dark shadow-lg p-3 mb-5 bg-light rounded">
       <Row xs={1} md={2}>
-          <Col>
-          <Container fluid>
+          <Col className="my-auto">
+          <Container>
             <Image src={ProfileImage} thumbnail fluid/>
             </Container>
           </Col>
-          <Col className="">
-            {" "}
-            <p className="text-center">Thanks for visiting my Portfolio !</p>
+          <Col className="my-auto">
+            <p>Thanks for visiting my Portfolio !</p>
             <p>
               You can browse through my projects to date, see what I've been
               learning since graduating from Northcoders in the blog, or if you
