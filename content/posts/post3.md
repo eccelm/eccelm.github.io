@@ -1,7 +1,6 @@
 ---
 title: A Hot Mess Inside A Dumpster Fire Inside A Train Wreck
-
-date: 2020-01-26
+date: 2020-01-30
 ---
 
 ### Monday -
