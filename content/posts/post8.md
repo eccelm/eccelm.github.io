@@ -19,7 +19,7 @@ I've gone with the Goldilocks heuristic; too much, not enough, just right. For r
 ## Names
 1. What are the minimum and maximum name values, if any?
 2. Can I submit without sending anything?
-3. Can I input any characters that are not alphabetical?
+3. Can I input any characters that are not alphabetical / Not-ASCII?
 4. What impact do spaces have?
 5. Can letters be repeated?
 
